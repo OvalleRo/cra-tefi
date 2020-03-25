@@ -45,35 +45,49 @@ import "./style.css"
 //     )
 // }
 
-class App extends React.Component {
-    constructor() {
-        super()
-        this.state = {
-            name: "Sally",
-            age: 19,
-        }
-        this.state = {
-            isLoggedIn: true,
-        }
-    }
+// class App extends React.Component {
+//     constructor() {
+//         super()
+//         this.state = {
+//             name: "Sally",
+//             age: 19,
+//         }
+//         this.state = {
+//             isLoggedIn: true,
+//         }
+//     }
 
-    render() {
-        let wordDisplay
-        if (this.state.isLoggedIn === true) {
-            wordDisplay= "in"
-        } else {
-            wordDisplay= "out"
-        }
+//     render() {
+//         let wordDisplay
+//         if (this.state.isLoggedIn === true) {
+//             wordDisplay= "in"
+//         } else {
+//             wordDisplay= "out"
+//         }
 
-        return(
-            <div>
-                {/* <h1>Is state important? {this.state.answer}</h1> */}
-                <h1>{this.state.name}</h1>
-                <h3>{this.state.age} years old</h3>
-                <h2>You are currently logged {wordDisplay}</h2>
-            </div>
-        )
-    }
+//         return(
+//             <div>
+//                 {/* <h1>Is state important? {this.state.answer}</h1> */}
+//                 <h1>{this.state.name}</h1>
+//                 <h3>{this.state.age} years old</h3>
+//                 <h2>You are currently logged {wordDisplay}</h2>
+//             </div>
+//         )
+//     }
+// }
+function handleClick(){
+    console.log("I was clicked!")
+}
+
+function App() {
+    return (
+        <div>
+            <img src="https://www.fillmurray.com/200/100"/>
+            <br />
+            <br />
+            <button onClick={handleClick} >Click me</button>
+        </div>
+    )
 }
 
 export default App;

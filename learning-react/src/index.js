@@ -10,4 +10,5 @@ import App from "./App"
 //mapping components (key={id})
 //class components
 //state
+//handiling events: https://reactjs.org/docs/events.html#supported-events
 ReactDOM.render(<App />, document.getElementById("root"));
