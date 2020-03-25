@@ -6,5 +6,6 @@ import App from "./App"
 //functional component
 //parent child components
 //inline style
-//props
+//props-propiedades
+//mapping components (key={id})
 ReactDOM.render(<App />, document.getElementById("root"));
