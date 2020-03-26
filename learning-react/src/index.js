@@ -11,4 +11,5 @@ import App from "./App"
 //class components
 //state
 //handiling events: https://reactjs.org/docs/events.html#supported-events
+//changing states
 ReactDOM.render(<App />, document.getElementById("root"));
