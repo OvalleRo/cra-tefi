@@ -8,4 +8,6 @@ import App from "./App"
 //inline style
 //props-propiedades
 //mapping components (key={id})
+//lifecycle methods
+//conditional rendering
 ReactDOM.render(<App />, document.getElementById("root"));
