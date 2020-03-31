@@ -52,21 +52,21 @@ class App extends React.Component {
         //     name: "Sally",
         //     age: 19,
         // }
-        // this.state = {
-        //     isLoggedIn: true,
-        // }
         this.state = {
-            count: 0,
+            isLoggedIn: false,
         }
+        // this.state = {
+        //     count: 0,
+        // }
         this.handleClick= this.handleClick.bind(this)
     }
-    //tambien se le puede pasat setState como prop a un componente
+    //tambien se le puede pasar setState como prop a un componente
     handleClick(){
         this.setState(prevState => {
             return {
-                count: prevState.count + 1
+                isLoggedIn: !prevState.isLoggedIn
             }
-        } )
+        })
     }
 
     render() {
@@ -76,13 +76,16 @@ class App extends React.Component {
         // } else {
         //     wordDisplay= "out"
         // }
+        let buttonText = this.state.isLoggedIn ? "LOG OUT" : "LOG IN"
+        let displayText = this.state.isLoggedIn ? "You are logged in" : "You are logged out"
 
         return(
             <div>
                 {/* <h1>Is state important? {this.state.answer}</h1> */}
-                <h1>{this.state.count}</h1>
+                {/* <h1>{this.state.count}</h1> */}
                 {/* <h2>You are currently logged {wordDisplay}</h2> */}
-                <button onClick={this.handleClick} >Change!</button>
+                <button onClick={this.handleClick} >{buttonText}</button>
+                <h1>{displayText}</h1>
             </div>
         )
     }
