@@ -14,4 +14,5 @@ import App from "./App"
 //changing states
 //fetching data from an API
 //forms
+//container-component architecture
 ReactDOM.render(<App />, document.getElementById("root"));
