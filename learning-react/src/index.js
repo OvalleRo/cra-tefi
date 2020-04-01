@@ -12,4 +12,6 @@ import App from "./App"
 //state
 //handiling events: https://reactjs.org/docs/events.html#supported-events
 //changing states
+//fetching data from an API
+//forms
 ReactDOM.render(<App />, document.getElementById("root"));
