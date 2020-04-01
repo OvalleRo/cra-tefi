@@ -1,42 +1,54 @@
 import React from "react"
-import Todoitem from "./components/Todoitem"
-import todosData from "./components/todosData"
+// import Todoitem from "./components/Todoitem"
+// import todosData from "./components/todosData"
+import Header from "./components/Header"
+import MemeGenerator from "./components/MemeGenerator"
 
 import "./style.css"
 
-class App extends React.Component {
-    constructor() {
-        super()
-        this.state = {
-            todos: todosData
-        }
-    this.handleChange = this.handleChange.bind(this)
-    }
+// class App extends React.Component {
+//     constructor() {
+//         super()
+//         this.state = {
+//             todos: todosData
+//         }
+//     this.handleChange = this.handleChange.bind(this)
+//     }
 
-    handleChange(id){
-        this.setState(prevState => {
-            const updatedTodos = prevState.todos.map(todo => {
-                if(todo.id === id){
-                    todo.completed = !todo.completed
-                }
-                return todo
-            })
-        return {
-            todos: updatedTodos
-        }
-        })
-    }
+//     handleChange(id){
+//         this.setState(prevState => {
+//             const updatedTodos = prevState.todos.map(todo => {
+//                 if(todo.id === id){
+//                     todo.completed = !todo.completed
+//                 }
+//                 return todo
+//             })
+//         return {
+//             todos: updatedTodos
+//         }
+//         })
+//     }
 
-    render() {
-        const todoItems = this.state.todos.map(item => <Todoitem key={item.id} item={item} handleChange={this.handleChange} />)
+//     render() {
+//         const todoItems = this.state.todos.map(item => <Todoitem key={item.id} item={item} handleChange={this.handleChange} />)
 
-        return(
-            <div className="todo-list">
-                {todoItems}
-            </div>
-        )
-    }
+//         return(
+//             <div className="todo-list">
+//                 {todoItems}
+//             </div>
+//         )
+//     }
     
+// }
+
+//Meme generator practice /////////////////////////////////////
+function App(){
+    return(
+        <div>
+            <Header />
+            <MemeGenerator />
+        </div>
+    )
 }
 
 export default App;

@@ -2,7 +2,7 @@ body {
     margin: 0;
 }
 
-.navbar {
+/* .navbar {
     height: 100px;
     background-color: #333;
     color: whitesmoke;
@@ -12,9 +12,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
-.todo-list {
+/* .todo-list {
     background-color: rgb(161, 165, 230);
     margin: auto;
     width: 50%;
@@ -23,24 +23,28 @@ body {
     align-items: center;
     border: 1px solid #efefef;
     box-shadow: 
-    /* top layer shadow */
+ 
         0 1px 1px rgba(0,0,0,0.15),
-    /*the second layer */
+
         0 10px 0 -5px #eeeeee,
-    /* the second layer shadow */
+  
         0 10px 1px -4px rgba(0,0,0,0.15),
-    /* third layer */
+ 
         0 20px 0 -10px #eeeeee,
-    /* the third layer shadow */
+   
         0 10px 1px -4px rgba(0,0,0,0.15),
     ;
-}
+} */
 
-.todo-item {
+/* .todo-item {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding: 30px 20px 0;
     width: 70%;
     border-bottom: 1px solid #cecece;
+} */
+
+.imgHeader {
+    width: 100px;
 }
